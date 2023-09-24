@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1af59c9;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #161212;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    text-align: center;
+    padding: 20px;
+}
+
+.grid {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    border: 1px solid red;
+    width: 400px;
+    height: 400px;
+}
+
+.grid-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.btn {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    align-items: center;
+    background-color: #f5e9c9;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 38px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.btn:hover {
+    background: linear-gradient(to bottom, #ffdbac, #ffcc99);
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    background: rgb(226, 127, 109);
+    border-radius: 5px;
+}
+
