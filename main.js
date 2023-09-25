@@ -114,6 +114,18 @@ bordersButton.addEventListener("click", () => {
 
 cellBorders();
 
+const resetButton = document.querySelector(".reset");
+
+function resetGridColors() {
+  cells.forEach(cell => {
+    cell.style.backgroundColor = "";
+  });
+}
+
+resetButton.addEventListener("click", () => {
+  resetGridColors();
+});
+
 function buttonInitialState() {
   draw = false;
   paintingButton.style.background = "#f5e9c9";
